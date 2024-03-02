@@ -16,7 +16,6 @@ const ContactForm = () => {
         setEmail(event.target[1].value);
         setText(event.target[2].value);
       Swal.fire({
-        // position: "top-end",
         icon: "success",
         title:"ThankYou, " + event.target[0].value + " for Contacting us.",
         showConfirmButton: false,
@@ -59,12 +58,8 @@ const ContactForm = () => {
                   <h2>{"I am " + name + " and my email is " + email + ". " + text}</h2></div>
           </div>
           <div>
-              <img src="images/contact.svg" alt="contact us" />
+              <img className={styles.img_control} src="images/contact.svg" alt="contact us" />
           </div>
-          
-              
- 
-          
     </section>
   )
 }
